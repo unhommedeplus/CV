@@ -3,126 +3,88 @@
 <head>
 <meta charset="UTF-8">
 <meta name="viewport" content="width=device-width, initial-scale=1.0">
-<title>CV — Peter | Développeur</title>
-<link rel="stylesheet" href="CV.css">
-<!-- Icônes simples via Lucide Icons (CDN) -->
-<script src="https://unpkg.com/lucide@latest"></script>
+<title>CV - Votre Nom</title>
+<link rel="stylesheet" href="style.css">
 </head>
 <body>
 
+<!-- En-tête / Présentation -->
+<header>
 <div class="container">
-
-<!-- EN-TÊTE / PROFIL -->
-<header class="header">
-<div class="header-text">
-<h1>Thomas Peter</h1>
-<p class="subtitle">Développeur Full Stack / Base de données</p>
-<p class="description">
-Passionné par la conception d'architectures applicatives robustes, la gestion de bases de données et la création d'interfaces intuitives.
-</p>
+<h1>Votre Prénom / Nom</h1>
+<p class="subtitle">Développeur / Intitulé du Poste</p>
 <div class="contact-links">
-<a href="mailto:thomas.peter@protonmail.com" class="btn btn-primary">
-<i data-lucide="mail"></i> Me contacter
-</a>
-<a href="cv.pdf" download class="btn btn-secondary">
-<i data-lucide="download"></i> Télécharger CV (PDF)
-</a>
+<a href="mailto:votre.email@example.com">Email</a> •
+<a href="https://linkedin.com/in/votreprofil" target="_blank">LinkedIn</a> •
+<a href="https://github.com/votreprofil" target="_blank">GitHub</a>
 </div>
 </div>
 </header>
 
-<!-- EXPÉRIENCES PROFESSIONNELLES -->
-<section class="section">
-<h2><i data-lucide="briefcase"></i> Expériences Professionnelles</h2>
+<main class="container">
+<!-- Profil / À propos -->
+<section id="about">
+<h2>À propos</h2>
+<p>
+Présentation courte et percutante de votre parcours, vos objectifs et ce qui vous passionne dans le domaine.
+</p>
+</section>
+
+<!-- Expériences professionnelles -->
+<section id="experience">
+<h2>Expériences Professionnelles</h2>
 
 <div class="card">
-<div class="card-header">
-<h3>Développeur & Administrateur de Données</h3>
-<span class="date">2024 — Présent</span>
-</div>
-<p class="company">Nom de l'Entreprise / Organisation</p>
+<h3>Poste Occupé <span class="date">2024 - Présent</span></h3>
+<p class="company">Nom de l'Entreprise — Ville</p>
 <ul>
-<li>Conception et optimisation de requêtes complexes sur bases de données relationnelles.</li>
-<li>Développement d'interfaces web internes et automatisation de flux de données.</li>
-<li>Mise en place de tests d'intégration et documentation technique.</li>
+<li>Missions principales exécutées ou réalisations concrètes.</li>
+<li>Outils, compétences ou technologies utilisés.</li>
 </ul>
 </div>
 
 <div class="card">
-<div class="card-header">
-<h3>Projet ou Postes Précédents</h3>
-<span class="date">2022 — 2024</span>
-</div>
-<p class="company">Projets / Autre structure</p>
+<h3>Autre Poste <span class="date">2022 - 2024</span></h3>
+<p class="company">Nom de l'Entreprise — Ville</p>
 <ul>
-<li>Développement d'applications et maintenance évolutive de scripts.</li>
-<li>Analyse des besoins utilisateurs et rédaction de cahiers des charges.</li>
+<li>Missions principales exécutées.</li>
+<li>Résultats obtenus ou projets menés à bien.</li>
 </ul>
 </div>
 </section>
 
-<!-- COMPÉTENCES -->
-<section class="section">
-<h2><i data-lucide="code-2"></i> Compétences Techniques</h2>
+<!-- Compétences -->
+<section id="skills">
+<h2>Compétences</h2>
 <div class="skills-grid">
 <div class="skill-category">
-<h3>Backend & Data</h3>
-<div class="tags">
-<span class="tag">SQL / PostgreSQL</span>
-<span class="tag">Python</span>
-<span class="tag">Node.js</span>
-<span class="tag">Git</span>
-</div>
+<h3>Langages & Outils</h3>
+<p>HTML5, CSS3, JavaScript, Git, SQL</p>
 </div>
 <div class="skill-category">
-<h3>Frontend & Style</h3>
-<div class="tags">
-<span class="tag">HTML5 / CSS3</span>
-<span class="tag">JavaScript</span>
-<span class="tag">React / Vue</span>
-<span class="tag">Responsive Design</span>
-</div>
+<h3>Savoir-faire</h3>
+<p>Gestion de projet, Bases de données, Troubleshooting</p>
 </div>
 </div>
 </section>
 
-<!-- PROJETS PERSONNELLES / PORTFOLIO -->
-<section class="section">
-<h2><i data-lucide="folder-git-2"></i> Projets Récents</h2>
-<div class="projects-grid">
+<!-- Formation -->
+<section id="education">
+<h2>Formation</h2>
 <div class="card">
-<h3>Nom du Projet 1</h3>
-<p>Application ou outil développé. Brève explication du problème résolu et de l'architecture choisie.</p>
-<div class="tags">
-<span class="tag-sm">HTML/CSS</span>
-<span class="tag-sm">JS</span>
-</div>
-</div>
-<div class="card">
-<h3>Nom du Projet 2</h3>
-<p>Script d'automatisation ou projet de gestion de base de données ouvert à la communauté.</p>
-<div class="tags">
-<span class="tag-sm">SQL</span>
-<span class="tag-sm">Python</span>
-</div>
-</div>
+<h3>Intitulé du Diplôme ou Certificat <span class="date">2022</span></h3>
+<p class="company">Nom de l'Établissement ou Organisme</p>
 </div>
 </section>
+</main>
 
-<!-- PIED DE PAGE -->
-<footer class="footer">
-<div class="socials">
-<a href="https://github.com" target="_blank" aria-label="GitHub"><i data-lucide="github"></i></a>
-<a href="https://linkedin.com" target="_blank" aria-label="LinkedIn"><i data-lucide="linkedin"></i></a>
+<!-- Pied de page -->
+<footer>
+<div class="container">
+<p>© 2026 — Conçu et codé à la main.</p>
 </div>
-<p>© 2026 — Construit en HTML & CSS</p>
 </footer>
 
-</div>
-
-<!-- Script pour charger les icônes -->
-<script>
-lucide.createIcons();
-</script>
 </body>
 </html>
+
