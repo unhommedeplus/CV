@@ -1,0 +1,125 @@
+/* Variables de couleurs et mise en page globale */
+:root {
+    --primary-color: #0f172a;
+    --accent-color: #2563eb;
+    --text-color: #334155;
+    --bg-color: #f1f5f9;
+    --card-bg: #ffffff;
+    --border-color: #e2e8f0;
+}
+
+* {
+    box-sizing: border-box;
+    margin: 0;
+    padding: 0;
+}
+
+body {
+    font-family: 'Segoe UI', system-ui, -apple-system, sans-serif;
+    line-height: 1.6;
+    color: var(--text-color);
+    background-color: var(--bg-color);
+    padding: 2rem 1rem;
+}
+
+/* Structure centrale */
+header, main, footer {
+    max-width: 800px;
+    margin: 0 auto;
+}
+
+/* En-tête du CV */
+header {
+    background-color: var(--primary-color);
+    color: #ffffff;
+    padding: 2.5rem 2rem;
+    border-radius: 12px 12px 0 0;
+    text-align: center;
+}
+
+header h1 {
+    font-size: 2.2rem;
+    margin-bottom: 0.25rem;
+    color: #ffffff;
+}
+
+header p {
+    font-size: 1.1rem;
+    color: #94a3b8;
+    margin-bottom: 1rem;
+}
+
+header address {
+    font-style: normal;
+    font-size: 0.95rem;
+    line-height: 1.8;
+}
+
+header address a {
+    color: #60a5fa;
+    text-decoration: none;
+}
+
+header address a:hover {
+    text-decoration: underline;
+}
+
+/* Contenu principal */
+main {
+    background-color: var(--card-bg);
+    padding: 2.5rem 2rem;
+    border-radius: 0 0 12px 12px;
+    box-shadow: 0 4px 6px -1px rgba(0, 0, 0, 0.05);
+}
+
+/* Titres de sections */
+h2 {
+    font-size: 1.25rem;
+    color: var(--primary-color);
+    border-bottom: 2px solid var(--accent-color);
+    padding-bottom: 0.4rem;
+    margin-top: 1.5rem;
+    margin-bottom: 1rem;
+    text-transform: uppercase;
+    letter-spacing: 0.5px;
+}
+
+section:first-of-type h2 {
+    margin-top: 0;
+}
+
+/* Blocs d'expériences */
+article {
+    margin-bottom: 1.25rem;
+    padding-bottom: 1rem;
+    border-bottom: 1px dashed var(--border-color);
+}
+
+article:last-of-type {
+    border-bottom: none;
+    padding-bottom: 0;
+}
+
+h3 {
+    font-size: 1.1rem;
+    color: var(--accent-color);
+}
+
+/* Listes à puces */
+ul {
+    padding-left: 1.2rem;
+    margin-top: 0.5rem;
+}
+
+li {
+    margin-bottom: 0.3rem;
+}
+
+/* Pied de page */
+footer {
+    text-align: center;
+    font-size: 0.85rem;
+    color: #64748b;
+    mar
+      gin-top: 1.5rem;
+}
