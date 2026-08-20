@@ -114,33 +114,55 @@ ul {
 li {
     margin-bottom: 0.3rem;
 }
-.conteneur {
+/* Layout global (Mobile First : bloc 3 en bas) */
+.layout {
     display: flex;
-    flex-wrap: wrap; /* Autorise le passage à la ligne */
+    flex-direction: column;
     gap: 1.5rem;
+    max-width: 1100px;
+    margin: 0 auto;
 }
 
+.colonne-principale {
+    display: flex;
+    flex-direction: column;
+    gap: 1rem;
+    flex: 1; /* Occupe tout l'espace disponible */
+}
+
+/* Alignement permanent des paires (1-2 et 4-5) */
+.ligne {
+    display: flex;
+    gap: 1rem;
+}
+
+.ligne .bloc {
+    flex: 1; /* Chaque bloc de la ligne prend exactement 50 % */
+}
+
+/* Titre intermédiaire */
+.colonne-principale h2 {
+    margin: 0.5rem 0;
+    font-size: 1.25rem;
+}
+
+/* Style générique des blocs */
 .bloc {
-    flex: 1;
-    min-width: 0; /* Empêche le texte de déborder */
     background-color: #f8fafc;
     border: 1px solid #e2e8f0;
     padding: 1.5rem;
     border-radius: 8px;
 }
 
-.bloc-grand {
-    flex: 2;
-}
-
-/* Sur écran réduit, le 3e bloc passe dessous et les 2 premiers restent alignés */
-@media (max-width: 768px) {
-    .bloc {
-        flex: 1 1 calc(50% - 0.75rem); /* 50% de la largeur moins la moitié du gap */
+/* Écrans larges (à partir de 992px) */
+@media (min-width: 992px) {
+    .layout {
+        flex-direction: row; /* Bascule le bloc 3 sur le côté */
     }
 
-    .bloc-grand {
-        flex: 1 1 100%; /* Prend toute la largeur sur la ligne du bas */
+    .bloc-3 {
+        width: 300px; /* Largeur fixe du bloc 3 sur grand écran */
+        /* Ou 'flex: 0 0 300px;' pour imposer une taille exacte */
     }
 }
 /* Pied de page */
