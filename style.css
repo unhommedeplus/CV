@@ -114,7 +114,29 @@ ul {
 li {
     margin-bottom: 0.3rem;
 }
+.conteneur {
+    display: flex;
+    gap: 1.5rem; /* Espace entre les blocs */
+}
 
+.bloc {
+    flex: 1; /* Les blocs 1 et 2 prennent 1 part chacun */
+    background-color: #f8fafc;
+    border: 1px solid #e2e8f0;
+    padding: 1.5rem;
+    border-radius: 8px;
+}
+
+.bloc-grand {
+    flex: 2; /* Le bloc 3 prend 2 parts (deux fois plus large) */
+}
+
+/* Adaptation pour les écrans mobiles */
+@media (max-width: 768px) {
+    .conteneur {
+        flex-direction: column;
+    }
+}
 /* Pied de page */
 footer {
     text-align: center;
