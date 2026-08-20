@@ -114,6 +114,7 @@ ul {
 li {
     margin-bottom: 0.3rem;
 }
+
 .conteneur {
     display: flex;
     gap: 1.5rem; /* Espace entre les blocs */
