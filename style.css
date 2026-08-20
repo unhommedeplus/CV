@@ -114,14 +114,15 @@ ul {
 li {
     margin-bottom: 0.3rem;
 }
-
 .conteneur {
     display: flex;
-    gap: 1.5rem; /* Espace entre les blocs */
+    flex-wrap: wrap; /* Autorise le passage à la ligne */
+    gap: 1.5rem;
 }
 
 .bloc {
-    flex: 1; /* Les blocs 1 et 2 prennent 1 part chacun */
+    flex: 1;
+    min-width: 0; /* Empêche le texte de déborder */
     background-color: #f8fafc;
     border: 1px solid #e2e8f0;
     padding: 1.5rem;
@@ -129,13 +130,17 @@ li {
 }
 
 .bloc-grand {
-    flex: 2; /* Le bloc 3 prend 2 parts (deux fois plus large) */
+    flex: 2;
 }
 
-/* Adaptation pour les écrans mobiles */
+/* Sur écran réduit, le 3e bloc passe dessous et les 2 premiers restent alignés */
 @media (max-width: 768px) {
-    .conteneur {
-        flex-direction: column;
+    .bloc {
+        flex: 1 1 calc(50% - 0.75rem); /* 50% de la largeur moins la moitié du gap */
+    }
+
+    .bloc-grand {
+        flex: 1 1 100%; /* Prend toute la largeur sur la ligne du bas */
     }
 }
 /* Pied de page */
